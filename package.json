@@ -1,0 +1,34 @@
+{
+  "name": "ava-protocol",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "abi": "node scripts/generate_sdk_abi.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/run_tests.mjs",
+    "pack:sdk": "node scripts/pack_sdk.mjs",
+    "pack:preview": "node scripts/pack_developer_preview.mjs",
+    "pretypecheck": "npm run build:runtime",
+    "pretest": "npm run build:runtime",
+    "build:runtime": "node scripts/build_runtime.mjs"
+  },
+  "dependencies": {
+    "fastify": "^5.0.0",
+    "viem": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "openai": "^7.45.1",
+    "stream-json": "3.7.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "license": "Apache-2.0",
+  "version": "0.1.0-preview.12"
+}

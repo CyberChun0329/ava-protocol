@@ -1,0 +1,63 @@
+{
+  "name": "@ava-protocol/local-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js"
+    },
+    "./server": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js"
+    },
+    "./queue": {
+      "types": "./dist/work-queue.d.ts",
+      "import": "./dist/work-queue.js"
+    },
+    "./query": {
+      "types": "./dist/query.d.ts",
+      "import": "./dist/query.js"
+    },
+    "./custody": {
+      "types": "./dist/custody.d.ts",
+      "import": "./dist/custody.js"
+    },
+    "./testing": {
+      "types": "./dist/testing.d.ts",
+      "import": "./dist/testing.js"
+    },
+    "./cli": {
+      "types": "./dist/cli.d.ts",
+      "import": "./dist/cli.js"
+    },
+    "./signing-read": {
+      "types": "./dist/signing-read.d.ts",
+      "import": "./dist/signing-read.js"
+    },
+    "./custody-operator": {
+      "types": "./dist/custody-operator.d.ts",
+      "import": "./dist/custody-operator.js"
+    },
+    "./python/privacy-backup": "./dist/python/privacy_backup.py",
+    "./python/custody-credentials": "./dist/python/custody_credentials.py"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts",
+    "NOTICE",
+    "dist/python/*.py"
+  ],
+  "types": "./dist/server.d.ts",
+  "dependencies": {
+    "@ava-protocol/sdk": "0.1.0",
+    "fastify": "^5.0.0",
+    "viem": "^2.0.0",
+    "stream-json": "3.7.0"
+  },
+  "license": "Apache-2.0"
+}

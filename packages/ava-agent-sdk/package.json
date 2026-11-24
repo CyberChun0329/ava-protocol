@@ -1,0 +1,26 @@
+{
+  "name": "@ava-protocol/agent-sdk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@ava-protocol/sdk": "0.1.0",
+    "viem": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts",
+    "NOTICE"
+  ],
+  "types": "./dist/index.d.ts",
+  "license": "Apache-2.0"
+}

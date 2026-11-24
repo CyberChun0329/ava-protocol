@@ -1,0 +1,33 @@
+{
+  "name": "@ava-protocol/sdk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./deployment": {
+      "types": "./dist/deployment.d.ts",
+      "import": "./dist/deployment.js"
+    },
+    "./costs": {
+      "types": "./dist/costs.d.ts",
+      "import": "./dist/costs.js"
+    }
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts",
+    "NOTICE"
+  ],
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "viem": "^2.0.0"
+  },
+  "license": "Apache-2.0"
+}

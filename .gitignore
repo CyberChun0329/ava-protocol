@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.build/
+.local/
+.tmp/
+__pycache__/
+.venv/
+.env
+.env.*
+broadcast/
+cache/
+out/
+.DS_Store

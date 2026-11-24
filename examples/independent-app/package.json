@@ -1,0 +1,12 @@
+{
+  "name": "ava-independent-work-order-consumer",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@ava-protocol/contracts": "file:artifacts/ava-protocol-contracts-0.1.0.tgz",
+    "@ava-protocol/sdk": "file:artifacts/ava-protocol-sdk-0.1.0.tgz",
+    "@ava-protocol/local-service": "file:artifacts/ava-protocol-local-service-0.1.0.tgz",
+    "viem": "2.57.10"
+  },
+  "devDependencies": { "typescript": "5.9.3", "@types/node": "24.19.2" }
+}
